@@ -1,0 +1,6 @@
+﻿  exam2.cpp
+c:\users\user\desktop\work\k2018\day2\day2\exam2\exam2.cpp(16): error C2146: 구문 오류: ')'이(가) 'ksa' 식별자 앞에 없습니다.
+c:\users\user\desktop\work\k2018\day2\day2\exam2\exam2.cpp(16): error C2065: 'ksa': 선언되지 않은 식별자입니다.
+c:\users\user\desktop\work\k2018\day2\day2\exam2\exam2.cpp(17): error C2065: 'ksa': 선언되지 않은 식별자입니다.
+c:\users\user\desktop\work\k2018\day2\day2\exam2\exam2.cpp(18): error C2065: 'ksa': 선언되지 않은 식별자입니다.
+c:\users\user\desktop\work\k2018\day2\day2\exam2\exam2.cpp(20): error C2059: 구문 오류: ')'

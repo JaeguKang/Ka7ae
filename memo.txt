@@ -1,0 +1,29 @@
+add > commit > push
+
+tracked , untracked
+
+staged , unstaged
+
+git help.
+
+git init
+
+git status
+git add 파일이름.형식
+git commit -m "메세지" 파일이름.형식
+
+upload
+git remote add origin https:주소주소 복붙
+git push -u origin master
+git push
+
+remove
+git rm --cached XXX
+git commit -m "OOO"
+
+----------------------
+
+git push
+
+git commit -"OOO" * 
+git clone 주소 

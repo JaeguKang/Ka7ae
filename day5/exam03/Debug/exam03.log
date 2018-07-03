@@ -1,0 +1,3 @@
+﻿  exam03.cpp
+c:\users\user\desktop\work\k2018\day5\exam03\exam03.cpp(35): warning C4552: '>=': 식의 결과가 사용되지 않습니다.
+  exam03.vcxproj -> C:\Users\USER\Desktop\work\k2018\day5\Debug\exam03.exe

@@ -1,0 +1,3 @@
+﻿  exam2.cpp
+c:\users\user\desktop\work\k2018\day3\exam2\exam2.cpp(31): warning C4477: 'printf' : 서식 문자열 '%lf'에 'double' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'int'입니다.
+  exam2.vcxproj -> C:\Users\USER\Desktop\work\k2018\day3\Debug\exam02.exe

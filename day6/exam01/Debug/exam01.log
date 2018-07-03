@@ -1,0 +1,6 @@
+﻿  exam01.cpp
+c:\users\user\desktop\work\k2018\day6\exam01\exam01.cpp(14): warning C4477: 'printf_s' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+c:\users\user\desktop\work\k2018\day6\exam01\exam01.cpp(15): warning C4477: 'printf_s' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+c:\users\user\desktop\work\k2018\day6\exam01\exam01.cpp(18): warning C4477: 'printf_s' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+c:\users\user\desktop\work\k2018\day6\exam01\exam01.cpp(19): warning C4477: 'printf_s' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+  exam01.vcxproj -> C:\Users\USER\Desktop\work\k2018\day6\Debug\exam01.exe

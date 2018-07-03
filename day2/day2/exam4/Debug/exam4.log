@@ -1,0 +1,3 @@
+﻿  exam4.cpp
+c:\users\user\desktop\work\k2018\day2\day2\exam4\exam4.cpp(12): warning C4476: 'printf' : 서식 지정자에 알 수 없는 형식 필드 문자 'r'이(가) 있습니다.
+  exam4.vcxproj -> C:\Users\USER\Desktop\work\k2018\day2\day2\Debug\exam4.exe
