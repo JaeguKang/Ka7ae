@@ -1,4 +1,4 @@
-add > commit > push
+﻿add > commit > push
 
 tracked , untracked
 
@@ -27,3 +27,7 @@ git push
 
 git commit -"OOO" * 
 git clone 주소 
+
+
+
+https://github.com/qldrnjs2001
