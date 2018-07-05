@@ -1,0 +1,5 @@
+const char *deli = " ";		//±¸ºÐÀÚ
+char *_temp;
+char *pToken;
+pToken = strtok_s(szBuf, deli, &_temp);
+pToken = strtok_s(NULL, deli, &_temp);
