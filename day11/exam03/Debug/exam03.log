@@ -1,0 +1,3 @@
+﻿  exam03.cpp
+c:\users\user\desktop\work\ks2018\engine\tge.h(16): warning C4042: 'szBufToken': 저장소 클래스가 잘못되었습니다.
+  exam03.vcxproj -> C:\Users\USER\Desktop\work\ks2018\day11\Debug\exam03.exe
