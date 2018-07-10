@@ -26,6 +26,12 @@ namespace TGE
 	}
 
 
+	CHAR_INFO *getCharacter(CHAR_INFO *pBuf, int x, int y)
+	{
+		return &(pBuf[(80 * y) + x]);
+	}
+
+
 	//스크린 클리어 함수
 	void clearScreenBuffer(WCHAR _wCode, WORD _wAttr)
 	{
@@ -80,7 +86,7 @@ namespace TGE
 
 	}
 
-	//가로 세로 직선 그리기 함수
+	//가로 직선 그리기 함수
 	void drawLineH(int _x, int _y, int _nLength, WCHAR code, WORD attr)
 	{
 		//int _x = 10;
@@ -95,7 +101,7 @@ namespace TGE
 			TGE::setCharacter(TGE::g_chiBuffer, _x + i, _y, code, attr);
 		}
 	}
-
+	//세로 직선 그리기 함수
 	void drawLineV(int _x, int _y, int _nLength, WCHAR code, WORD attr)
 	{
 		int i = 0;
@@ -123,6 +129,26 @@ namespace TGE
 		return _nTokenIndex;
 	}
 
-	
+	//세이브함수
+	int saveBufferBinary(CHAR_INFO *pBuf, const char *szFileName)
+	{
+		FILE *fp;
+		fopen_s(&fp, szFileName, "w");
+		fwrite(pBuf, SCREEN_BUF_SIZE * sizeof(CHAR_INFO), 1, fp);
+		fclose(fp);
+
+		return 0;
+	}
+
+	//로드함수
+	int loadBufferBinary(CHAR_INFO *pBuf, const char *szFileName)
+	{
+		FILE *fp;
+		fopen_s(&fp, szFileName, "r");
+		fread_s(pBuf, SCREEN_BUF_SIZE * sizeof(CHAR_INFO), sizeof(CHAR_INFO), 2000, fp);
+		fclose(fp);
+
+		return 0;
+	}
 
 }
