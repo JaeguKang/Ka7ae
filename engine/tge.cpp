@@ -1,11 +1,13 @@
 #include"stdafx.h"
 
+#include"tge.h"
+
 //80x25
-#define SCREEN_BUF_SIZE 2000
-#define SCREEN_WIDTH 80
+
 
 namespace TGE
 {
+
 	CHAR_INFO g_chiBuffer[SCREEN_BUF_SIZE];
 
 	//커서이동함수
@@ -112,7 +114,7 @@ namespace TGE
 	}
 
 	//토큰 만들기 함수
-	int doTokenize(char *szBuf, char szBufToken[8][16])
+	int doTokenize(char *szBuf, char szBufToken[8][MAX_TOKEN_SIZE])
 	{
 		char *szpTemp;
 		char *pNextToken = NULL;
@@ -121,7 +123,7 @@ namespace TGE
 		int _nTokenIndex = 0;
 		while (szpTemp != NULL)
 		{
-			strcpy_s(szBufToken[_nTokenIndex], 16, szpTemp);
+			strcpy_s(szBufToken[_nTokenIndex], sizeof(szBufToken[_nTokenIndex]), szpTemp);
 			_nTokenIndex++;
 			szpTemp = strtok_s(NULL, pszDelimiter, &pNextToken);	//두번째 호출
 		}
@@ -149,6 +151,11 @@ namespace TGE
 		fclose(fp);
 
 		return 0;
+	}
+
+	CHAR_INFO *CreateScreenBuffer()
+	{
+		return (CHAR_INFO*)malloc(sizeof(CHAR_INFO)*SCREEN_BUF_SIZE);
 	}
 
 }

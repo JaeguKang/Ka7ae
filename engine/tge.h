@@ -1,5 +1,10 @@
 #pragma once
 
+
+#define SCREEN_BUF_SIZE 2000
+#define SCREEN_WIDTH 80
+#define MAX_TOKEN_SIZE 64
+
 namespace TGE
 {
 	void setCursor(HANDLE handle, int x, int y);
@@ -16,9 +21,12 @@ namespace TGE
 	extern CHAR_INFO g_chiBuffer[];
 
 	//蜡瓶府萍
-	int doTokenize(char *szBuf, char szBufToken[8][16]);
+	int doTokenize(char *szBuf, char szBufToken[8][MAX_TOKEN_SIZE]);
 
 	//颇老贸府
 	int saveBufferBinary(CHAR_INFO *pBuf, const char *szFileName);
 	int loadBufferBinary(CHAR_INFO *pBuf, const char *szFileName);
+
+
+	CHAR_INFO *CreateScreenBuffer();
 }
