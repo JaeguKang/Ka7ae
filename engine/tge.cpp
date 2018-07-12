@@ -158,4 +158,31 @@ namespace TGE
 		return (CHAR_INFO*)malloc(sizeof(CHAR_INFO)*SCREEN_BUF_SIZE);
 	}
 
+	//스프라이트
+	void putSprite(int posx, int posy, int destw, int desth, int srcw, int srch, CHAR_INFO *pDest, CHAR_INFO *pSrc)		//좌표(x, y), 결과물의 크기(dest), 원본의 크기(src), 결과물버퍼, 원본버퍼
+	{
+
+		int _x;
+		int _y;
+		_x = posx;	//출력위치
+		_y = posy;
+		int src_buf_size = srcw * srch;
+		int nStep = 0;
+		int _i = 0;
+		for (int i = 0;i < src_buf_size;i++)
+		{
+			nStep = i / srcw;
+
+			pDest[_i + (nStep * SCREEN_WIDTH) + (_y * SCREEN_WIDTH + _x)] = pSrc[i];
+			_i++;
+			_i %= srcw;
+		}
+
+	}
+
+	void putSprite(int posx, int posy, int srcw, int srch, CHAR_INFO *pDest, CHAR_INFO *pSrc)		//좌표(x, y), 원본의 크기(src), 결과물버퍼, 원본버퍼
+	{
+		putSprite(posx, posy, SCREEN_WIDTH, 25, srcw, srch, pDest, pSrc);
+	}
+
 }
