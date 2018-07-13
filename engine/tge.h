@@ -12,6 +12,9 @@ namespace TGE
 	CHAR_INFO *getCharacter(CHAR_INFO *pBuf, int x, int y);
 
 	void clearScreenBuffer(WCHAR _wCode, WORD _wAttr);			//void clearScreenBuffer(CHAR_INFO *pBuf);
+	void clearScreenBuffer(CHAR_INFO *pBuf, WCHAR _wCode, WORD _wAttr);
+	void CopyScreenBuffer(CHAR_INFO *pBufdest, CHAR_INFO *pBufsrc);
+
 	void updateBuffer(HANDLE handle, CHAR_INFO *pBuf);
 
 	void drawBox(CHAR_INFO *pBuf, int _posx, int _posy, int _width, int _height);
@@ -21,6 +24,10 @@ namespace TGE
 	extern CHAR_INFO g_chiBuffer[];
 
 	//유틸리티
+	namespace util
+	{
+		UINT64 GetTimeMs64();
+	}
 	int doTokenize(char *szBuf, char szBufToken[8][MAX_TOKEN_SIZE]);
 
 	//파일처리
@@ -33,4 +40,15 @@ namespace TGE
 	//스프라이트
 	void putSprite(int posx, int posy, int destw, int desth, int srcw, int srch, CHAR_INFO *pDest, CHAR_INFO *pSrc);
 	void putSprite(int posx, int posy, int srcw, int srch, CHAR_INFO *pDest, CHAR_INFO *pSrc);
+
+
+	namespace input
+	{
+		extern char g_KeyTable[1024];
+		extern COORD g_cdMousePos;
+		void setNormalMode();
+		void setEditMode();
+	}
+	void startTGE(HANDLE *phStdout);
+	void endTGE();
 }
