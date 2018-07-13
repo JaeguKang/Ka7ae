@@ -1,0 +1,5 @@
+﻿  exam06.cpp
+c:\users\user\desktop\work\ks2018\day15\exam06\exam06.cpp(28): warning C4244: '인수': 'irr::f32'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\desktop\work\ks2018\day15\exam06\exam06.cpp(32): warning C4244: '인수': 'irr::f32'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\desktop\work\ks2018\day15\exam06\exam06.cpp(40): warning C4244: '인수': 'irr::f32'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  exam06.vcxproj -> C:\Users\USER\Desktop\work\ks2018\day15\Debug\exam06.exe
