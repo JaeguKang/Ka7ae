@@ -1,5 +1,5 @@
 #include"stdafx.h"
-
+//#include"../day16/gameObject.h"
 #include"tge.h"
 #include"tge_sprite.h"
 
@@ -10,6 +10,11 @@ namespace tge_sprite
 		pObj->m_header.m_cdWorkSpr = { 0,0 };
 		strcpy_s(pObj->m_header.szHeader, sizeof(pObj->m_header.szHeader), "TGESPR");
 		pObj->m_pSpriteBuf = NULL;
+	}
+
+	void Release(S_SPRITE_OBJECT *pObj)
+	{
+		free(pObj->m_pSpriteBuf);
 	}
 
 	//load Spr
@@ -43,6 +48,13 @@ namespace tge_sprite
 		return 0;
 	}
 	//put Spr
+	int put(S_SPRITE_OBJECT *pObj, int posx, int posy)
+	{
+		TGE::putSprite(posx, posy,
+			pObj->m_header.m_cdWorkSpr.X,
+			pObj->m_header.m_cdWorkSpr.Y, TGE::g_chiBuffer, pObj->m_pSpriteBuf);
+		return 0;
+	}
 	int put(S_SPRITE_OBJECT *pObj, int posx, int posy, CHAR_INFO *pDestScreenBuf)
 	{
 		TGE::putSprite(posx, posy, pObj->m_header.m_cdWorkSpr.X, pObj->m_header.m_cdWorkSpr.Y, pDestScreenBuf, pObj->m_pSpriteBuf);

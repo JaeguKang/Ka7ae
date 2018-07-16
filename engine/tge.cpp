@@ -1,5 +1,4 @@
 #include"stdafx.h"
-
 #include"tge.h"
 //#include"../day15/exam04/gameObject.h"
 
