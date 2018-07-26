@@ -18,7 +18,7 @@ void initMapTool(S_TGE_MAPTOOL *pObj)
 //토큰처리
 int parseCmd(S_TGE_MAPTOOL *pObj, char *szCmdBuf)
 {
-	static char szTokenBuf[8][16];
+	static char szTokenBuf[8][64];
 
 	TGE::doTokenize(szCmdBuf, szTokenBuf);
 

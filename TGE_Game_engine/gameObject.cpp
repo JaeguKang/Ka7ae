@@ -17,6 +17,7 @@ namespace cs2018prj
 		pObj->m_pSprite = pSpr;
 		pObj->m_bActive = false;
 		pObj->m_pWepon = NULL;
+		pObj->pTargetBuf = NULL;
 	}
 
 	//플레이어 오브젝트

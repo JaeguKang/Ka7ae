@@ -38,3 +38,4 @@ https://github.com/qldrnjs2001
 		TGE
 
 MapTool		GameObject	tge_Sprit
+010 2040 0640

@@ -1,0 +1,11 @@
+{
+	"name": "Kang Jae_gu",
+	"distance": 29.7,
+	"national_code": 24,
+	"item": {
+		"wepon": "dagger",
+		"ap": 25
+	},
+	"comm": false,
+	"etc": [ 1, "sorry", 2, 3, 5 ]
+}

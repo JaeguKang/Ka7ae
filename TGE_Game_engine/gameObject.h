@@ -14,6 +14,7 @@ namespace cs2018prj
 		//CHAR_INFO m_Spr;
 		tge_sprite::S_SPRITE_OBJECT *m_pSprite;
 		irr::core::vector2df m_translation;
+		void *pTargetBuf;
 		int m_nFSM;
 		bool m_bActive;
 		void(*m_fpClone)(S_GAMEOBJECT *pObj);

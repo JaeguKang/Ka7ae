@@ -1,0 +1,4 @@
+sceneSetups:
+- path: "C:/Users/USER/Desktop/work2/New Unity Project 2/Assets/\uBFC5\uBFC5\uC774.unity"
+  isLoaded: 1
+  isActive: 1
